@@ -54,7 +54,7 @@ Setup and verification commands are hard gates. Do not continue to mapping or im
 - Default to a first-version MVP unless the user asks for more.
 - Build the smallest runnable core workflow.
 - Defer nonessential architecture, integrations, and edge cases.
-- Leave the app runnable with `npm run dev` and complete final verification after each change.
+- Leave the app runnable with `npm run dev`, but do not start local servers, persistent database processes, or open localhost unless the user explicitly asks.
 
 ## Final Verification Gate
 
@@ -89,4 +89,4 @@ After the mandatory baseline gate passes:
 2. Inspect the verified clone for relevant patterns.
 3. Implement the change directly in the cloned project, following the route boundaries above.
 4. Produce planning output only when the user asks for it or the change needs clarification.
-5. Ask the user to run `npm run dev` to let them play with the current state of the SaaS.
+5. Ask the user to run `npm run dev` themselves to play with the current state of the SaaS; do not run it for them.
