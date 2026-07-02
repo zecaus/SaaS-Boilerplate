@@ -46,7 +46,9 @@ Setup and verification commands are hard gates. Do not continue to mapping or im
 - Prefer existing Clerk account and organization features before custom auth flows.
 - Follow nearby style and import conventions.
 - Run `npm run db:generate` whenever `src/models/Schema.ts` changes.
+- Persist product data in the database, not in local state or memory. Use Drizzle ORM for all database access.
 - Make new components visually polished and consistent with the current UI: reuse existing Shadcn/Radix primitives, Tailwind tokens, spacing, typography, states, and responsive patterns before introducing new visual treatments.
+- Use shadcn/ui theme tokens for UI colors; change colors only in `src/styles/global.css`, not locally in components.
 - React Compiler is enabled, so don't add `useMemo` or `useCallback`.
 
 ## MVP Scope
